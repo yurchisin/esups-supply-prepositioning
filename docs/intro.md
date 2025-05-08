@@ -30,11 +30,6 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
 
 We have also added some popular features for Jupyter Book that really you shouldn't miss when building your own project with Jupyter Book and Read the Docs:
 
-* [intersphinx to link to other documentation and Jupyter Book projects](/intersphinx)
-* [sphinx-examples to show examples and results side-by-side](/sphinx-examples)
-* [sphinx-hoverxref to preview cross-references](/sphinx-hoverxref)
-* [sphinx-proof for logic and math, to write proofs, theorems, lemmas etc.](/sphinx-proof)
-
 
 ## Table of Contents
 
