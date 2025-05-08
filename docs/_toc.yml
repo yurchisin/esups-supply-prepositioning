@@ -13,6 +13,9 @@ parts:
     - file: disaster_prepositioning_2
 - caption: Optimization!
   chapters:
+    - file: disaster_prepositioning_3_A
+    - file: disaster_prepositioning_3_B
+    - file: disaster_prepositioning_3
     - file: disaster_prepositioning_5
 - caption: Production Code
   chapters:
@@ -20,4 +23,3 @@ parts:
 - caption: Extras
   chapters:
     - file: disaster_prepositioning_6
-
