@@ -2,3 +2,6 @@ gurobipy
 numpy
 pandas
 plotly
+dataclasses
+functools
+Typing
