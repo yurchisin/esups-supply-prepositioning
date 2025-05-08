@@ -7,5 +7,4 @@ parts:
 - caption: Background Material
   chapters:
   - file: disaster_prepositioning_0.ipynb
-    title: ESUPS and the STOCKHOLM Platform
   - file: disaster_prepositioning_1.ipynb
