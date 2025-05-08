@@ -1,4 +1,6 @@
-/docs/conf.py
+.DS_Store
+
+#/docs/conf.py
 /docs/_build
 
 # Byte-compiled / optimized / DLL files
