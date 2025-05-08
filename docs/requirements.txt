@@ -1,0 +1,4 @@
+gurobipy
+numpy
+pandas
+plotly==5.23.0

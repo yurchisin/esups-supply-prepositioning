@@ -8,3 +8,6 @@ parts:
   chapters:
   - file: disaster_prepositioning_0.ipynb
   - file: disaster_prepositioning_1.ipynb
+- caption: A Look at the Data and STOCKHOLM
+  chapters:
+  - file: disaster_prepositioning_2.ipynb
