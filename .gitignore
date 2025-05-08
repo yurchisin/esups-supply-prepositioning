@@ -138,3 +138,4 @@ dmypy.json
 
 # Temporary editor files
 *.swp
+.DS_Store
