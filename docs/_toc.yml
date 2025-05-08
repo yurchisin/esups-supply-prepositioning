@@ -5,11 +5,15 @@ format: jb-book
 root: intro
 parts:
 - caption: Background Material
-  - file: disaster_prepositioning_0.ipynb
-  - file: disaster_prepositioning_1.ipynb
+  chapters:
+    - file: disaster_prepositioning_0.ipynb
+    - file: disaster_prepositioning_1.ipynb
 - caption: A Look at the Data and STOCKHOLM
-  - file: disaster_prepositioning_2.ipynb
+  chapters:
+    - file: disaster_prepositioning_2.ipynb
 - caption: Optimization!
-  - file: disaster_prepositioning_5.ipynb
+  chapters:
+    - file: disaster_prepositioning_5.ipynb
 - caption: Extras
-  - file: disaster_prepositioning_6.ipynb
+  chapters:
+    - file: disaster_prepositioning_6.ipynb
