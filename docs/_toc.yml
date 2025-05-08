@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 parts:
-- caption: the notebook
+- caption: Background Material
   chapters:
   - file: disaster_prepositioning_0.ipynb
