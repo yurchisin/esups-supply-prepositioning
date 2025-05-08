@@ -30,7 +30,7 @@ nb_execution_timeout = 30
 nb_output_stderr = 'show'
 numfig = True
 pygments_style = 'sphinx'
-suppress_warnings = ['myst.domains', 'mystnb.unknown_mime_type']
+suppress_warnings = ['myst.domains', 'mystnb.unknown_mime_type','mystnb.exec']
 use_jupyterbook_latex = True
 use_multitoc_numbering = True
 
