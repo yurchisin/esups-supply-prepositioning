@@ -17,9 +17,7 @@ parts:
     - file: disaster_prepositioning_3_B
     - file: disaster_prepositioning_3
     - file: disaster_prepositioning_5
-- caption: Production Code
-  chapters:
-    - file: disaster_prepositioning_4
 - caption: Extras
   chapters:
+    - file: disaster_prepositioning_4
     - file: disaster_prepositioning_6
