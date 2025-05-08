@@ -10,7 +10,8 @@ parts:
     - file: disaster_prepositioning_1
 - caption: A Look at the Data and STOCKHOLM
   chapters:
-    - file: disaster_prepositioning_2
+    - file: disaster_prepositioning_2-1
+    - file: disaster_prepositioning_2-2
 - caption: Optimization!
   chapters:
     - file: disaster_prepositioning_3_A
