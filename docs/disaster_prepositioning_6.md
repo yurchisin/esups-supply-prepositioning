@@ -1,4 +1,4 @@
-# Math Addendum - Introduction to Optimization 
+# Math Addendum - Other Topics in Optimization
 
 ## What Happened to the Second Derivative?
 
@@ -20,36 +20,37 @@ Given these challenges, alternative optimization methods are preferred. Gradient
 
 ## Branch and Bound
 
-The **Branch and Bound** method is a powerful optimization technique used for solving **integer programming** problems where some or all decision variables must take on integer values. The fundamental idea is to systematically explore branches of possible solutions while “bounding” areas that cannot contain the optimal solution, thereby narrowing down the search efficiently.
+The **Branch and Bound** method is a powerful optimization technique used for solving **integer programming** problems where some or all decision variables must take on integer values. The fundamental idea is to systematically explore branches of possible solutions while pruning areas that cannot contain optimal solutions based on bounds, thereby narrowing down the search efficiently. In the following, we will discuss the LP-based branch and bound method in more detail.
 
+![Branch-and-Bound](images/branch-and-bound.png)
 
-![](images/branch-and-bound.png)
+### LP-Based Branch and Bound
 
-**Step-by-Step Process:**
 1.	**Relaxation of Constraints:**
-To start, we relax the integer constraints, treating all variables as continuous. This relaxation converts the integer programming problem into a standard linear programming problem, which we can solve efficiently using the **Simplex Method**. The result of this relaxed problem provides a baseline solution that may not necessarily satisfy the integer requirements. For example, if the optimal solution of the relaxed problem gives us a variable  x = 2.6 , we know this is not a valid solution if  x  must be an integer.
+To start, we relax the integer constraints, treating all variables as continuous. This relaxation converts the integer programming problem into a standard linear programming problem, which we can solve efficiently, e.g., with the **Simplex Method**. The result of this relaxed problem provides a baseline solution that may not necessarily satisfy the integer requirements. For example, if the optimal solution of the relaxed problem gives us a variable $x = 2.6$, we know this is not a valid solution if $x$ must be an integer. Additionally, we obtain a bound on the optimal solution value.
 
 2.	**Creating Subproblems by Branching:**
-When a solution contains a variable that is not an integer (like  x = 2.6 ), we create two subproblems by “branching” on this variable:
-    -	**Branch 1:** Add a constraint that rounds  x  **down** to the nearest integer,  $x \leq 2$.
-    -	**Branch 2:** Add a constraint that rounds  x  **up** to the next integer,  $x \geq 3$.
-These constraints split the solution space into two smaller, more manageable subproblems. By dividing the problem this way, we explore different regions of the solution space that could lead to an optimal integer solution.
+When a solution contains a variable that is not an integer (like $x = 2.6$), we create two subproblems by "branching" on this variable:
+    -	**Branch 1:** Add a constraint that rounds $x$ **down** to the nearest integer, $x \leq 2$.
+    -	**Branch 2:** Add a constraint that rounds $x$  **up** to the next integer, $x \geq 3$.
+These constraints split the solution space into two smaller, more manageable subproblems. By dividing the problem this way recursively, we explore different regions of the solution space that could lead to an optimal integer solution.
 
 3.	**Solving and Bounding:**
-We then solve each of these subproblems, again using the Simplex Method, to find the best possible solutions within the new constraints. For each subproblem:
-    -	If a subproblem yields a solution that is **feasible** (i.e., all variables are integers) and **better** than the current best-known solution, it becomes the new candidate for the optimal solution.
-    -	If a subproblem’s solution is not feasible (i.e., it still has non-integer variables) or if it cannot improve upon the current best solution, we bound it off. This means we stop exploring that branch further, as it cannot possibly lead to a better solution.
+We then solve each of these subproblems, again using the Simplex Method, to find the best possible solutions with respect to the new constraints. For each subproblem:
+    -	If a subproblem yields a solution that is **feasible** (i.e., all variables are integers) and **better** than the current best-known solution, it becomes the new incumbent solution.
+    -	If a subproblem becomes infeasible, we can ignore it.
+    - If a subproblem cannot improve upon the current best solution based on the bounds we obtained so far, we prune it and do not explore it further.
+    - Otherwise we obtain a solution that still has non-integer variables, and need to continue with branching.
 
 4.	**Recursive Exploration:**
 The process continues recursively: for each subproblem that still contains non-integer solutions, we branch again, creating further subproblems with tighter constraints. This systematic exploration and bounding help eliminate large swaths of the solution space that cannot contain the optimal solution, making the search much more efficient.
 
 5.	**Convergence to the Optimal Solution:**
-The Branch and Bound algorithm terminates when all subproblems have been explored or bounded off. At this point, the best feasible solution found is guaranteed to be the **optimal solution** for the original integer programming problem. Unlike heuristic methods, this approach provides a definitive, mathematically-proven optimal solution.
+The Branch and Bound algorithm terminates when all subproblems have been explored or pruned. At this point, the best feasible solution found is guaranteed to be the **optimal solution** for the original integer programming problem. Unlike heuristic methods, this approach provides a definitive, mathematically-proven optimal solution.
 
 By combining the efficiency of the Simplex Method for solving linear problems with a systematic search for feasible integer solutions, Branch and Bound is a robust method for tackling complex optimization problems where some or all decision variables must be integers.
 
 ## Stochastic Systems
-
 
 In the context of disaster relief logistics, the environment is not just dynamic but also inherently stochastic. This means that many of the variables involved—such as demand for supplies, transportation times, or the availability of resources—are not deterministic. Instead, they are influenced by a range of unpredictable factors, from weather conditions to sudden changes in infrastructure availability or the emergence of new areas needing assistance. Stochastic systems introduce randomness and uncertainty into optimization problems, requiring specialized approaches that can handle variability effectively.
 
