@@ -33,3 +33,9 @@ pygments_style = 'sphinx'
 suppress_warnings = ['myst.domains', 'mystnb.unknown_mime_type']
 use_jupyterbook_latex = True
 use_multitoc_numbering = True
+
+# Allow errors so the build doesn’t stop
+nbsphinx_allow_errors = True
+
+# Display the entire traceback in the rendered HTML
+nbsphinx_show_tracebacks = True
