@@ -12,11 +12,13 @@ parts:
   chapters:
     - file: disaster_prepositioning_2-1
     - file: disaster_prepositioning_2-2
-- caption: Optimization!
+- caption: Building Optimization Models
   chapters:
-    - file: disaster_prepositioning_3_A
-    - file: disaster_prepositioning_3_B
-    - file: disaster_prepositioning_3
+    - file: disaster_prepositioning_3-1
+      sections:
+        - file: disaster_prepositioning_3_A
+        - file: disaster_prepositioning_3_B
+    - file: disaster_prepositioning_3-2
     - file: disaster_prepositioning_5
 - caption: Extras
   chapters:

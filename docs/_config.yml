@@ -4,7 +4,8 @@
 
 title: Using Optimization to Prepositioning Disaster Relief Supplies
 author: Gurobi Optimization
-#logo: logo.png
+#logo: polytope.svg
+copyright: "2025"  # Copyright year to be placed in the footer
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

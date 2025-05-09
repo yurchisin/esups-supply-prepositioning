@@ -7,3 +7,5 @@ In this comprehensive case study, learners will delve into the strategic and ope
 
 ```{tableofcontents}
 ```
+
+Acknowledgements: Ben Rapkin, Florent Chane, Jason Acimovic, Lindsay Montanari, Jerry Yurchisin, Mario Ruthmair, Ronald van der Velden, Andrew Antenucci, Ben Kennerly

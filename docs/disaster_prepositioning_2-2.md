@@ -1,6 +1,5 @@
 # The Evolution of the STOCKHOLM Platform
 
-
 Effective communication is vital in disaster response, not only for coordinating logistics but also for ensuring that the right information reaches the right people at the right time. In this section, we will explore the ESUPS website, which serves as a central hub for sharing critical data and insights with a diverse audience, including NGOs, government agencies, and the public.
 
 The ESUPS STOCKHOLM platform is designed to translate complex optimization models and logistical data into intuitive, actionable information. Through a combination of interactive charts, maps, and data visualizations, the platform provides users (comprised of NGOs and humanitarian/relief organizations) with a clear understanding of where pre-positioned supplies are located, how they can be accessed, and the impact of various logistical decisions.
