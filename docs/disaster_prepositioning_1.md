@@ -77,7 +77,7 @@ Optimization frameworks, unlike neural networks, don’t blindly sample solution
 
 ### The Simplex Method
 
-The Simplex Method is a powerful algorithm for solving linear programming problems, which involve optimizing a linear objective function subject to linear constraints. Based on geometric principles, it efficiently navigates the feasible region—a polyhedron formed by the intersection of these constraints—to find the optimal solution at one of its vertices or "corner points." In linear programming, the optimal solution is guaranteed to be at a vertex because the objective function improves as we move along the edges of the polyhedron until we can't improve any further.
+The Simplex Method is a powerful algorithm for solving [linear programming](https://en.wikipedia.org/wiki/Linear_programming) problems, which involve optimizing a linear objective function subject to linear constraints. Based on geometric principles, it efficiently navigates the feasible region—a polyhedron formed by the intersection of these constraints—to find the optimal solution at one of its vertices or "corner points." In linear programming, the optimal solution is guaranteed to be at a vertex because the objective function improves as we move along the edges of the polyhedron until we can't improve any further.
 
 To visualize this, imagine a two-dimensional feasible region shaped like a polygon on a graph. Each point within this polygon represents a possible solution that satisfies the constraints. The Simplex Method moves from one vertex to another along the edges of this polygon, evaluating the objective function at each corner point. This process is efficient because it doesn't require checking every possible point within the feasible region.
 
@@ -95,25 +95,9 @@ This approach offers a clear advantage: instead of searching through a massive n
 
 ### An Advancing field
 
-Optimization has taken a backseat with the rise of Machine Learning and Big Data. But if you think back to your courses, you’ll remember that both fields share many of the same mathematical roots. Many core ML concepts, like gradient descent, evolved from numerical optimization techniques like Newton’s method. I bring this up because, even though optimization might seem less flashy compared to the latest ML algorithms, it’s experiencing a resurgence. Recent advancements in solvers and algorithms have made optimization more powerful and easier to use, allowing it to tackle complex, large-scale problems that were previously out of reach. There are also many free educational resources available to get problem solvers up and running with optimization, making it more accessible than ever before—check out www.gurobi.com/learn for just some of the educational materials openly available to learners. All of this means it’s becoming an essential tool for decision-making in various industries, from logistics to finance.
-Just as an example, Gurobi, the most popular optimization model currently avalible, has seen a speed-up of 80% for problem like pre-positioning and has increased the solver's flexibility ~67% in the past 10 years 
+Optimization has taken a backseat with the rise of Machine Learning and Big Data. But if you think back to your courses, you’ll remember that both fields share many of the same mathematical roots. Many core ML concepts, like gradient descent, evolved from numerical optimization techniques like Newton’s method. I bring this up because, even though optimization might seem less flashy compared to the latest ML algorithms, it’s experiencing a resurgence. Recent advancements in solvers and algorithms have made optimization more powerful and easier to use, allowing it to tackle complex, large-scale problems that were previously out of reach. There are also many free educational resources available to get problem solvers up and running with optimization, making it more accessible than ever before—check out [Gurobi's leanrning page](https:www.gurobi.com/learn) for just some of the educational materials openly available to learners. All of this means it’s becoming an essential tool for decision-making in various industries, from logistics to finance.
 
-
-Just as an example, Gurobi, the most popular optimization solver currently available, has seen a speed-up of 80% for problems like pre-positioning and has increased the solver's flexibility ~67% in the past 10 years
-
-And this is still very much under active development. Take a look at some of the improved speeds for large problems in the table below! (It's not important that you know the specific names, but nearly every problem you would use optimization for falls in this table!)
-
-
-|Problem Class | Speed-Up in Past year | 
-| -------- | ------- |
-| Mixed-Integer Linear Program (MILP)  | 12.4% |
-| Mixed-Integer Quadratic Program (MIQP) | 22.8% |
-| Mixed Integer with Quadratic Constraints Program (MIQCP) | 18.2% |
-
-<sup> Comparing Version 10.0 (released Nov 22) and Version 11.0 (released Nov 23) </sup>
-
-
-If your curious about what this means for real life applications, take a look below at some of the examples!
+The type of mathematical optimization model this case study looks at is a linear program (LP), which was described above. But there are **many** other flavors of models, which are more complex than LPs and help modelers represent extremely complex problems mathematically. If your curious about what this means for real life applications, take a look below at some of the examples!
 
 ### A Few Real World Examples:
 
